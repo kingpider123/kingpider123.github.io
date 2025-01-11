@@ -1,173 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+ 
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,300;1,400&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
-<body> 
-    <a id="top"></a>
-      <nav class="navbar">
-          <div class="navbar__container">
-            <a href="#top" id="navbar__logo" ><span class="logo">福</span>Phuc Nguyen</a>
-            <div class="navbar__toggle" id="mobile_menu">
-                <span class="bar"></span> <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
 
-            <ul class="navbar__menu">
-                <li class="navbar__item"><a href="#" class="links" >Home</a></li>
-                <li class="navbar__item"><a href="#body 1" class="links">About</a></li>
-                <li class="navbar__item"><a href="#body 2" class="links">Contact</a></li>
-                <li class="navbar__resume"><a href="https://drive.google.com/file/d/1eyXtkATeZnRiIesILIJPcUcer6FG-vG4/view" class="resume" target="_blank" >Resume</a></li>      
-            </ul>
-          </div>
-      </nav>
-      
-    <div class="header_background">
-        
-        <div class="header_container">
+<body id="top">
 
-                <h1 class="header_text">
-                    Phuc Nguyen
-                </h1>
-                <a href="#body 1" >
-                    <button class="header_title-button">
-                      <span class="button-text">Hope to be a software engineer </span>  
-                    </button>
-                </a>
-               
-            
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <span class="logo">福</span>
+            </a>
         </div>
-    <div style="position: absolute; top:90%;">
-        <a id="body 1"></a>
-    </div>
-    </div>
 
+        <nav class="header-nav">
 
-<div class="body1-background">
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
-   <div class="body1-title">About Me</div>
-   <div class="body-content">
-       <div class="body-content1">
-           <img class="picture"  src="img/zZWgwbhjg8lXGczi.png">
-           <div class="title">NQU CSIE</div>
-           <div class="content">I'm a Computer Science major at Nation Quemoy University, Kinmen (Bachelor), Expected Graduation: 2025</div>
-        </div>
-       <div class="body-content2">           
-        <img class="picture" src="img/target-icon-isolated-white-background-vector-isolated-black-icon-goal-concept-icon-eps-10_158224-121.webp">
-        <div class="title">My Goals</div>
-        <div class="content">Finish Bachelor Program, Master Program and land a job as a software engineer.</div>
-       </div>
-       
-    <div class="body-content3">
-        <img class="picture"  src="img/icon-interest-hobby-interest-142372776.jpg">
-        <div class="title">Interests</div>
-        <div class="content">I love watching Anime, Youtube, reading Manhwa, playing sport(soccer), esport(LOL).</div>
-     </div>
-    </div>
-</div>
-
-
-<a id="body 2" style="position: relative;"></a>
-<div class="body2-background">
-    <section class="contact section">
-    <h2 class="section__title">Contact Me</h1>
-    <span class="section__subtitle">Get in touch</span>
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a href="./portfolio.html" title="works">Works</a></li>
+                    <li><a href="./friends.html" title="clients">Friends</a></li>
+                    <li><a href="./music.html" title="clients">Music</a></li>
+                    <li><a href="./contact.html" title="contact">Contact</a></li>
+                </ul>
     
-    <div class="contact__container container grid">
-        <div >
-            <div class="contact__information">
-                <i class="uil uil-phone contact contact__icon"></i>
-                <div>
+                <p>Being a student here, I've learned a lot from <a href='https://csie.nqu.edu.tw/' target="_blank">CSIE department</a>. Hopefully someday I will become a software engineer. </p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61559850088274" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </li> 
+                    <li>
+                        <a href="https://www.instagram.com/minhphuc25102003/?next=%2F&hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kingpider123" target="_blank"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCkrDlJCiuBJtvPoNqVt7y_w" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                    </li>
+                </ul>
 
-                    <h3 class="contact__title">Call Me</h3>
-                    <span class="contact__subtitle">0910137996</span>
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/background.gif" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Welcome to My Website</h3>
+
+                <h1>
+                    My name is <strong>阮銘福</strong><br>
+                    I'm currently a National Quemoy University student<br>
+                    Major in Computer Science <br>
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        Overall
+                    </a>
+                    <a href="#services" class="smoothscroll btn btn--stroke">
+                        More about me
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61559850088274" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/minhphuc25102003/?next=%2F&hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="https://github.com/kingpider123" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span>Github</span></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCkrDlJCiuBJtvPoNqVt7y_w" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i><span>Youtube</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">Hello There</h3>
+                <h1 class="display-1 display-1--light">I Am <strong>阮銘福</strong></h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                My birthday is 25th October 2003. I was born and raised in Viet Nam. Up until 18 years old graduated from high school, I came here (Kinmen) to pursue a Bachelor Degree of Computer Science and Information Engineering at National Quemoy University. In the future, I want to study Master in Taiwan and have a job there.
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+       
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What is My Ability?</h3>
+                <h1 class="display-2">Below are some of the things about me that I'm good at.</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-tasks"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Programming Skills</h3>
+                    <p>I'm able to code in Python, C#, C, Js. My biggest project is using Unity (C#) to design a VR war game resembling August 23rd Kinmen Artilery Battle. Also, I've solved 30 problems in LeetCode.
+                    </p>
                 </div>
             </div>
-            <div class="contact__information">
-                <i class="uil uil-envelope contact__icon"></i>
 
-                <div>
-
-                    <h3 class="contact__title">Email</h3>
-                    <span class="contact__subtitle">s111010552@student.nqu.edu.tw</span>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-briefcase"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">My Resume</h3>
+                    <p>This is my resume for applying for IT related jobs. You guys can click here to see my Resume:</p>
+                    <a href="https://drive.google.com/file/d/1eyXtkATeZnRiIesILIJPcUcer6FG-vG4/view" target="_blank" style="font-size:large">Resume</a>
                 </div>
             </div>
-            <div class="contact__information">
-                <i class="uil uil-map-marker contact__icon"></i>
 
-                <div>
-
-                    <h3 class="contact__title">Location</h3>
-                    <span class="contact__subtitle">School's Dormitory Room No.131</span>
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-futbol-o"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2">Sports</h3>
+                    <p>My favorite sport is Soccer. Beside soccer, I can play badminton, basketball, swimming. Through playing sports, I can improve my strength and also make new friends along the way.
+                    </p>
                 </div>
             </div>
-        </div>  
 
-        <form action="" class="contact__form grid">
-            <div class="contact__inputs grid">
-                <div class="contact__content">
-                    <label for="" class="contact__label">Name</label>
-                    <input type="text" class="contact__input">
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
                 </div>
-                <div class="contact__content">
-                    <label for="email" class="contact__label">Email</label>
-                    <input type="email" class="contact__input">
+                <div class="service-text">
+                    <h3 class="h2">Web Design</h3>
+                    <p>I can do HTML, CSS, JS for front-end. Also, I'm currently learning Dreamweaver. I've been designed 3 web pages until now but it is mostly in the front-end part.
+                    </p>
                 </div>
             </div>
-            <div class="contact__content">
-                <label for="" class="contact__label">Project</label>
-                <input type="text" class="contact__input">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="fa fa-language"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Languages</h3>
+                    <p>My mother-tongue is Vietnamese but now since I'm studying here, I need to speak Chinese, study in Chinese on a daily basis. I can also speak English. To me, English acts as an important tool to learn Chinese.
+                    </p>
+                </div>
             </div>
-            <div class="contact__content">
-                <label for="" class="contact__label">Message</label>
-                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+    
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon"><i class="icon-lego-block"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Web Development</h3>
+                    <p>Regarding back-end, I'm learning SQL, ASP.net at the moment. I once did a realtime chat app with Deno and WebSocket.
+                    </p>
+                </div>
             </div>
 
-            <div>
-                    <button class="button button--flex"><a href="mailto:s111010552@student.nqu.edu.tw" target="_blank" style="text-decoration: none;  color:black;">Send Message </a>  <i class="uil uil-message button__icon"></i></button>
-            </div>
-        </form>
-    </div>
+        </div> <!-- end services-list -->
 
-</section>
-</div>
-<footer class="footer">
-    <div class="footer__bg">
-        <div class="footer__container container grid">
-            <div>
-                <h1 class="footer__title">Phuc Nguyen</h1>
-                <span class="footer__subtitle">NQU CSIE Student</span>
+    </section> <!-- end s-services -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
+                <div class="footer-logo"></div>
+                I feel like I'm really fortunate to be able to study at National Quemoy University. NQU provides me with a lot of opportunities to study, experience and make friends. Over the course of almost 3 years of studying here, my Chinese has improved a lot regarding I hadn't learned Chinese before.
+
             </div>
 
-            <ul class="footer__links">
-                <li>
-                    <a href="#body 1" class="footer__link">About Me</a>
-                </li>
-                <li>
-                    <a href="#body 2" class="footer__link">Contact</a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/file/d/1CcFyAobXPQMgyaLLBqxXwXgZ_zDdlJ8t/view?usp=sharing" class="footer__link" target="_blank">Resume</a>
-                </li>
-            </ul>
-            
-            <div class="footer__socials">
-                <a href="https://www.facebook.com/profile.php?id=100029980153010" class="footer__social" target="_blank"><i class="uil uil-facebook"></i></a>
-                <a href="https://github.com/kingpider123" class="footer__social" target="_blank"><i class="uil uil-github"></i></a>
-                <a href="https://www.youtube.com/channel/UCkrDlJCiuBJtvPoNqVt7y_w" class="footer__social" target="_blank"><i class="uil uil-youtube"></i></a>
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h4>I'm always available to make friends</h4>
+                <p>If you are interested in soccer, badminton, coding, you are always welcome. Click here to have my contact info.</p>
+                <a href="./contact.html"><button class="footerButton">Contact</button></a>
+
+            </div>
+
+        </div> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
     </div>
-</footer>
-<a href="#" class="scrollup" id="scroll-up"><i class="uil uil-arrow-up scrollup__icon"></i></a>
-   <script src="app.js"></script>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
